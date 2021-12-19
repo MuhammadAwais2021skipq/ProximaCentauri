@@ -9,8 +9,7 @@ def lambda_handler(event, context):
     cw = cloudwatchPutMetric();
     
     dimensions = [
-        {'Name': 'URL', 'Value':constants.URL_TO_MONITOR},
-        {'Name': 'Region', 'Value': 'DUB' }
+        {'Name': 'URL', 'Value':constants.URL_TO_MONITOR}
         ]
         
         
